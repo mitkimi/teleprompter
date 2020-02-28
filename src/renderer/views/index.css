@@ -1,0 +1,73 @@
+.page {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.page .header {
+  height: 40px;
+  background: #f8f8f9;
+  padding: 10px 20px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.page .header .logo {
+  width: 180px;
+  height: 40px;
+  background: #efeff3;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.page .body {
+  height: calc(100vh - 60px);
+  display: flex;
+}
+.page .body .menu {
+  width: 200px;
+  background: #efeff3;
+}
+.page .body .menu .btn-container {
+  margin: 10px;
+}
+.page .body .menu .menu-container .menu-item {
+  height: 40px;
+  line-height: 40px;
+}
+.page .body .menu .menu-container .item {
+  padding: 0 7px 0 10px;
+  border-right: 3px solid #efeff3;
+}
+.page .body .menu .menu-container .item:hover {
+  background: #dcdfe6;
+  border-right: 3px solid #909399;
+}
+.page .body .menu .menu-container .active {
+  border-right: 3px solid #409eff;
+  background: #f8f8f9;
+}
+.page .body .menu .menu-container .active:hover {
+  border-right: 3px solid #409eff;
+}
+.page .body .main {
+  width: calc(100vw - 200px - 40px);
+  padding: 20px;
+}
+.page .body .main .ops {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.page .body .main .section {
+  margin-bottom: 20px;
+}
+.page .body .main .section .tit {
+  border-left: 3px solid #409eff;
+  padding: 0 0 0 7px;
+  height: 30px;
+  line-height: 30px;
+  background: #f8f8f9;
+  margin-bottom: 10px;
+}
