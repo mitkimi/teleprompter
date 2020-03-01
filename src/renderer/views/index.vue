@@ -37,6 +37,9 @@
             <div class="editor" id="editor"></div>
           </div>
         </div>
+        <div class="no-active" v-show="!active">
+          aa
+        </div>
       </div>
     </div>
   </div>

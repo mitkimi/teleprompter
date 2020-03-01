@@ -21,9 +21,9 @@
     "pack:main": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.main.config.js",
     "pack:renderer": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.renderer.config.js",
     "postinstall": "npm run lint:fix",
-    "build-install:win": "electron-builder --win --ia32",
-    "build-install:linux": "electron-builder --linux deb tar.xz",
-    "build-install:mac": "electron-builder -mwl"
+    "dist:win": "electron-builder --win --ia32",
+    "dist:linux": "electron-builder --linux deb tar.xz",
+    "dist:mac": "electron-builder -mwl"
   },
   "build": {
     "productName": "提词器",

@@ -71,3 +71,9 @@
   background: #f8f8f9;
   margin-bottom: 10px;
 }
+.page .body .main .no-active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

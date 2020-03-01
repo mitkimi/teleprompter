@@ -71,6 +71,12 @@
           margin-bottom: 10px;
         }
       }
+      .no-active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 }
