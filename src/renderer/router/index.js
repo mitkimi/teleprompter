@@ -14,6 +14,11 @@ export default new Router({
       path: '/ppt',
       name: 'ppt',
       component: require('@/views/ppt').default
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: require('@/views/about').default
     }
     // {
     //   path: '/',

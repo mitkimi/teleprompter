@@ -76,6 +76,18 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        .tt {
+          font-size: 30px;
+        }
+        .dd {
+          margin-top: 10px;
+          font-size: 14px;
+        }
+        .tips {
+          margin-top: 30px;
+          font-size: 12px;
+          color: #999999;
+        }
       }
     }
   }

@@ -77,3 +77,15 @@
   justify-content: center;
   align-items: center;
 }
+.page .body .main .no-active .tt {
+  font-size: 30px;
+}
+.page .body .main .no-active .dd {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.page .body .main .no-active .tips {
+  margin-top: 30px;
+  font-size: 12px;
+  color: #999999;
+}

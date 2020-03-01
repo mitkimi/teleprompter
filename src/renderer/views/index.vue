@@ -3,7 +3,8 @@
     <div class="header">
       <div class="logo">Teleprompter</div>
       <div class="operation">
-        <el-button @click="handleShowPpt">播放</el-button>
+        <el-button @click="handleShowAbout">关于</el-button>
+        <el-button @click="handleShowPpt" v-if="activeIndex !== null">播放</el-button>
       </div>
     </div>
     <div class="body">
@@ -38,7 +39,12 @@
           </div>
         </div>
         <div class="no-active" v-show="!active">
-          aa
+          <div>
+            <img src="../../main/assets/logo.png" />
+          </div>
+          <div class="tt">提词器</div>
+          <div class="dd">欢迎使用</div>
+          <div class="tips">请点击左侧列表中的字幕标题选择一个字幕播放，或新建字幕。</div>
         </div>
       </div>
     </div>
@@ -84,6 +90,11 @@ export default {
     editor.txt.html(this.activeContent)
   },
   methods: {
+    handleShowAbout () {
+      this.$router.push({
+        path: 'about'
+      })
+    },
     handleShowPpt () {
       const content = this.activeContent
       this.$store.dispatch('setContent', { content })
