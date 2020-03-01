@@ -1,0 +1,12 @@
+directories:
+  output: dist
+  buildResources: build
+productName: 提词器
+appId: com.ipietech.teleprompter
+mac:
+  icon: ./src/main/assets/logo.icns
+win:
+  icon: ./src/main/assets/logo.ico
+linux:
+  icon: ./src/main/assets/logo.png
+electronVersion: 2.0.18
